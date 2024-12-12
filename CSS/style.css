@@ -15,7 +15,8 @@
   --color-hover-li: #222222;
   --footer-color: #fff;
   --font-default: "Roboto", sans-serif;
-  --bg-color-card : #fff
+  --bg-color-card : #fff;
+  --contact-details-bg-color: #F5F5F5;
 }
 :root:has(#mode:checked) {
   --background-accent: #252525;
@@ -27,7 +28,9 @@
   --background-img: url(../images/images/team-shape-dark.svg);
   --color-h3-h4-p-li-a: hsl(0, 0%, 100%);
   --footer-color: #fff;
-  --bg-color-card : #161616
+  --bg-color-card : #161616;
+  --text-main-invert: #000;
+  --contact-details-bg-color: #0d0d0d;
 }
 
 * {
@@ -59,7 +62,7 @@ a {
 }
 
 .container {
-  width: 85%;
+  width: 80%;
   margin: auto;
 }
 
@@ -275,6 +278,7 @@ nav .nav-mode i {
   font-family: var(--font-primary);
   font-weight: 100;
   margin-top: 0;
+  color: var(--text-main);
 }
 
 .title h2 span {
@@ -472,7 +476,7 @@ nav .nav-mode i {
   display: flex;
   align-items: center;
   gap: 40px;
-  background-color: var(--background-accent);
+  background-color: var(--contact-details-bg-color);
 }
 
 .details-icon {
@@ -483,10 +487,19 @@ nav .nav-mode i {
   align-items: center;
   justify-content: center;
   background-color: var(--color-main);
+  color: var(--text-main-invert);
+}
+
+.details-text h4{
+  color: var(--paragraph-color);
+}
+
+.details-text p , .details-text a{
+  color: var(--text-main);
 }
 
 #contact form {
-  background-color: var(--background-primary);
+  background-color: var(--contact-details-bg-color);
   box-shadow: 5px 10px 8px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 20px;
